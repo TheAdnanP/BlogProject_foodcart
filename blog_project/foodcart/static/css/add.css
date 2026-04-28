@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Pacifico', cursive;
+    color: #110983;
+}
+
+body{
+    background-color: #110983;
+}
+
+.card{
+    margin: 0;
+    border: 0ch;
+    background-color: #FECFCF;
+    
+}
+
+label{
+    color: #110983;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+input{
+    border-radius: 1.5rem;
+    height: 2rem;
+}
+
