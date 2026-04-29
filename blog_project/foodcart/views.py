@@ -3,24 +3,17 @@ from django.shortcuts import redirect, render
 
 # Create your views here.
 
-def add_product(request):
-    return render(request,"add.html")
+def home(request):
+    return render(request,"index.html")
 
-def add_product_post(request):
-    if request.method == "POST":
-        nm = request.POST.get('name')
-        price = request.POST.get('price')
-        des = request.POST.get('description')
-        img = request.FILES.get('image')
+def about(request):
+    return render(request,"about.html")
 
-        obj = Product(
-            name=nm,
-            price=price,
-            description=des,
-            image=img
-        )
-        obj.save()
+def contact(request):
+    return render(request,"contact.html")
 
-        return redirect('/add_product')
+def cookies(request):
+    return render(request,"cookies.html")
 
-    return redirect('/')
+def testimonial(request):
+    return render(request,"testimonial.html")
